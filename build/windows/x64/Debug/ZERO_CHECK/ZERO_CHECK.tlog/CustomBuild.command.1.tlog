@@ -1,0 +1,10 @@
+^D:\FLUTTER_PROJECTS\CLASHOFCLANS_VIEWER\BUILD\WINDOWS\CMAKEFILES\B8AACA79EC9D87C054BE699ABEF81F87\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Flutter_Projects/clashofclans_viewer/windows -BD:/Flutter_Projects/clashofclans_viewer/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Flutter_Projects/clashofclans_viewer/build/windows/clashofclans_viewer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
